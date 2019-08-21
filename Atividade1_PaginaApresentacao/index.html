@@ -5,7 +5,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Apresentacao</title>
-        <link rel="stylesheet" href="css/style.css">
+        
+        <style>
+            #nome {
+                font-weight: bold;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+            #about_me {
+                font-family: sans-serif;
+            }
+
+            .left_border {
+                margin-left: 12px;
+            }
+
+            section {
+                padding: 0 5%;
+            }
+
+            article {
+                width: 25%;
+                margin: 20px;
+                float: left;
+            }
+
+            article img {
+                width: 100%;
+            }
+
+            .article_title {
+                text-align: center;
+                font-size: 30px;
+                margin: 20px;
+                font-weight: bold;
+            }
+        </style>
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
@@ -27,12 +63,48 @@
 
         <div class="left_border">
             <h2 id="nome">Luis Gustavo Peçanha</h2>
-            <img src="img/Screenshot_2019-08-21 Luis Gustavo Peçanha.png">
+            <img src="https://scontent.faqa2-1.fna.fbcdn.net/v/t1.0-9/68708882_875708549481944_2997114473631711232_n.jpg?_nc_cat=108&_nc_oc=AQm4MObLsAKlXVz1LQX89YynRCreGeZBaY6eWEFvtP68lH87dU5gwDfdGYHZHnsfJ0Q&_nc_ht=scontent.faqa2-1.fna&oh=75d7673262cf05f1ecb3cdd86bc85fbe&oe=5DCC640D">
         </div>
 
         <div id="about_me" class="left_border">
             <h1>About Me</h1>
-            <p>My name is Luis Gustavo Peçanha </p>
+            <p>My name is Luis Gustavo Peçanha and I currently study Computer Engineering at Universidade de São Paulo - São Carlos.
+                My hobbies include listening to eletronic music, playing video and card games and programming. When there is time available i also enjoy reading.
+            </p>
+
+            <p>
+                Here are some examples of DJ's that I enjoy listening to:
+            </p>
+
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=3jXP6hRJ70I">Solomun Tommorowland Set</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=hENgrbIMiy4&t=2361s">ARTBAT Cercle Set</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=kDNS4iFRwg0&t=1017s">EELKE KLEIJN The Lab Set</a>
+                </li>
+            </ul>
+
+            <p>
+                Books that i enjoyed reading:
+            </p>
+            <section>
+                    <article>
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/A1PlcXIypYL.jpg">
+                        <div class="article_title">Atlas Shrugged</div>
+                    </article>
+                    <article>
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/51Vqbfzy88L._SY445_QL70_.jpg">
+                        <div class="article_title">Digital Gold</div>
+                    </article>
+                    <article>
+                        <img src="magic_images/img4.jpg">
+                        <div class="article_title">The First Image</div>
+                    </article><div class="clearfix"></div>
+            </section>
         </div>
 
     </body>
