@@ -1,25 +1,3 @@
-#page_header {
-    text-align: center;
-    background-color: blue;
-    height: 40px;
-    padding: 10px;
-    width: 100%;
-}
-
-#logo {
-    float: left;
-}
-
-#searchbar {
-    border-radius: 10px;
-    height: 30px;
-    vertical-align: middle;
-}
-
-#categories_bar {
-
-}
-
 .navbar_ul {
     list-style-type: none;
     margin: 0;
@@ -38,10 +16,15 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-radius: 10px;
 }
 
 .navbar_a:hover {
     background-color: #111;
+}
+
+.categoriesbar_a:hover {
+    background-color: darkblue;
 }
 
 .options_header {
@@ -49,9 +32,29 @@
     margin-right: 10px;
 }
 
+#page_header {
+    background-color: blue;
+}
+
+#logo {
+    float: left;
+}
+
+#searchbar {
+    border-radius: 20px;
+    border: 2px solid lightslategray;
+    height: 40px;
+    float: right;
+}
+
+#categories_bar {
+    
+}
+
 body {
     margin: 0;
 }
+
 
 
 
