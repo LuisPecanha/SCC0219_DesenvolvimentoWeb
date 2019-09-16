@@ -1,0 +1,29 @@
+#page_header {
+    text-align: center;
+    background-color: blue;
+    height: 40px;
+    padding: 10px;
+    width: 100%;
+}
+
+#logo {
+    float: left;
+}
+
+#searchbar {
+    border-radius: 10px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.options_header {
+    float: right;
+    margin-right: 10px;
+}
+
+body {
+    margin: 0;
+}
+
+
+
