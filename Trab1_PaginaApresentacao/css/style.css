@@ -34,6 +34,9 @@
 
 #page_header {
     background-color: blue;
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 
 #logo {
@@ -53,6 +56,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#detalhes_1 {
+    padding: 10px;
+    border: solid black 2px;
 }
 
 body {
