@@ -1,0 +1,23 @@
+<html>
+<header> </header>
+<body>
+  <div id="demo">
+    <h1>The XMLHttpRequest Object</h1>
+    <button type="button" onclick="loadDoc()">Change Content</button>
+  </div>
+
+  <script>
+function loadDoc() {
+  let xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+ let query = "SELECT * WHERE {?state <http://dbpedia.org/ontology/type>  <http://dbpedia.org/resource/States_of_Brazil>} LIMIT 10"
+  query = "https://dbpedia.org/sparql/?query=" + query;
+  xhttp.open("GET", encodeURI(query), true);
+  xhttp.send();
+}
+</script>
+</body>

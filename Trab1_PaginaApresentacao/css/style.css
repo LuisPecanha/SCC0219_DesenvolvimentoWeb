@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #F7B71D;
 }
 
 .navbar_li {
@@ -12,7 +12,7 @@
 
 .navbar_a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -20,11 +20,11 @@
 }
 
 .navbar_a:hover {
-    background-color: #111;
+    background-color: rgb(211, 153, 18)
 }
 
 .categoriesbar_a:hover {
-    background-color: darkblue;
+    background-color: #e4d781;
 }
 
 .options_header {
@@ -32,8 +32,54 @@
     margin-right: 10px;
 }
 
+.centralize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_lançamento {
+    width: 200px;
+    height: 200px;
+    background-color: lightseagreen;
+    border-radius: 5px;
+}
+
+.item_nome {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.item_nome:hover {
+    text-decoration: underline;
+}
+
+.item_preço {
+    text-align: center;
+    font-size: 20px;
+    color: purple;
+}
+
+.item_botao {
+    text-align: center;
+    padding: 10px;
+    background: green;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid lightgrey;
+}
+
+.setor_rodape {
+    float: left;
+    margin: 0 20px 0 20px;
+}
+
 #page_header {
-    background-color: blue;
+    background-color: #fdef96;
     position: sticky;
     top: 0;
     width: 100%;
@@ -53,20 +99,47 @@
 #carrosel {
     background: red;
     height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #detalhes_1 {
     padding: 10px;
-    border: solid black 2px;
+}
+
+
+#lançamentos {
+    text-shadow: 1px 1px 5px black;
+    font-size: 30px;
+    color: purple;
+    font-weight: bold;
+}
+
+#setor_lançamento {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#search_icon {
+    padding-left: 5px;
+    padding-bottom: 0;
+}
+
+#search_icon:hover {
+    background-color: #fdef96;
+}
+
+#rodape p {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
     margin: 0;
 }
 
-
+article {
+    float: left;
+    margin: 0 10px 0 10px;
+}
 
 
