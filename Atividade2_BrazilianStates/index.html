@@ -4,6 +4,8 @@
     <script>
         function loadDoc() 
         {
+            var userInput = document.getElementById("myList").value;
+            var aux = "SELECT ?name WHERE {?city <http://dbpedia.org/ontology/isPartOf> <http://dbpedia.org/resource/" + userInput + ">; rdfs:label ?name. FILTER(lang(?name) = 'pt') }"
             let xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() 
             {
@@ -12,54 +14,56 @@
                     document.getElementById("demo").innerHTML = this.responseText;
                 }
             };
-            let query = "SELECT * WHERE {?state <http://dbpedia.org/ontology/type>  <http://dbpedia.org/resource/States_of_Brazil>} LIMIT 10"
+            //let query = "SELECT ?name WHERE {?city <http://dbpedia.org/ontology/isPartOf> <http://dbpedia.org/resource/Minas_Gerais>; rdfs:label ?name. FILTER(lang(?name) = 'pt') } LIMIT 1000"
+            let query = aux;
             query = "https://dbpedia.org/sparql/?query=" + query;
             xhttp.open("GET", encodeURI(query), true);
             xhttp.send();
         }
+
     </script>
 
 
     <form>
         <fieldset>
-            <legend>Selecting state of Brazil</legend>
+            <legend>Select the state of Brazil whose cities you want to know.</legend>
             <p>
-            <label>Select State</label>
-            <select id="myList">
-                <option value="1">Acre</option>
-                <option value="2">Alagoas</option>
-                <option value="3">Amapá</option>
-                <option value="4">Amazonas</option>
-                <option value="5">Bahia</option>
-                <option value="6">Ceará</option>
-                <option value="7">Distrito Federal</option>
-                <option value="8">Espírito Santo</option>
-                <option value="9">Goiás</option>
-                <option value="10">Maranhão</option>
-                <option value="11">Mato Grosso</option>
-                <option value="12">Mato Grosso do Sul</option>
-                <option value="13">Minas Gerais</option>
-                <option value="14">Pará</option>
-                <option value="15">Paraíba</option>
-                <option value="16">Paraná</option>
-                <option value="17">Pernambuco</option>
-                <option value="18">Piauí</option>
-                <option value="19">Rio de Janeiro</option>
-                <option value="20">Rio Grande do Norte</option>
-                <option value="21">Rio Grande do Sul</option>
-                <option value="22">Rondônia</option>
-                <option value="23">Roraima</option>
-                <option value="24">Santa Catarina</option>
-                <option value="25">São Paulo</option>
-                <option value="26">Sergipe</option>
-                <option value="27">Tocantins</option>
+            <select id="myList" onchange="loadDoc();">
+                <option>Acre</option>
+                <option>Alagoas</option>
+                <option>Amapá</option>
+                <option>Amazonas</option>
+                <option>Bahia</option>
+                <option>Ceará</option>
+                <option value="Federal_District_(Brazil)">Distrito Federal</option>
+                <option value="Espírito_Santo">Espírito Santo</option>
+                <option>Goiás</option>
+                <option>Maranhão</option>
+                <option value="Mato_Grosso">Mato Grosso</option>
+                <option value="Mato_Grosso_do_Sul">Mato Grosso do Sul</option>
+                <option value="Minas_Gerais">Minas Gerais</option>
+                <option>Pará</option>
+                <option>Paraíba</option>
+                <option>Paraná</option>
+                <option>Pernambuco</option>
+                <option>Piauí</option>
+                <option value="Rio_de_Janeiro">Rio de Janeiro</option>
+                <option value="Rio_Grande_do_Norte">Rio Grande do Norte</option>
+                <option value="Rio_Grande_do_Sul">Rio Grande do Sul</option>
+                <option>Rondônia</option>
+                <option>Roraima</option>
+                <option value="Santa_Catarina">Santa Catarina</option>
+                <option value="São_Paulo">São Paulo</option>
+                <option>Sergipe</option>
+                <option>Tocantins</option>
                 </select>
             </p>
         </fieldset>
     </form>
-    
+
+    <!--<button type="button" onclick="loadDoc();">See cities</button> -->
+
     <div id="demo">
-        <h1>The XMLHttpRequest Object</h1>
-        <button type="button" onclick="loadDoc()">Change Content</button>
+
     </div>
 </body>
