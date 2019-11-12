@@ -1,0 +1,145 @@
+.navbar_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F7B71D;
+}
+
+.navbar_li {
+    float: left;
+}
+
+.navbar_a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.navbar_a:hover {
+    background-color: rgb(211, 153, 18)
+}
+
+.categoriesbar_a:hover {
+    background-color: #e4d781;
+}
+
+.options_header {
+    float: right;
+    margin-right: 10px;
+}
+
+.centralize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_lançamento {
+    width: 200px;
+    height: 200px;
+    background-color: lightseagreen;
+    border-radius: 5px;
+}
+
+.item_nome {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.item_nome:hover {
+    text-decoration: underline;
+}
+
+.item_preço {
+    text-align: center;
+    font-size: 20px;
+    color: purple;
+}
+
+.item_botao {
+    text-align: center;
+    padding: 10px;
+    background: green;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid lightgrey;
+}
+
+.setor_rodape {
+    float: left;
+    margin: 0 20px 0 20px;
+}
+
+#page_header {
+    background-color: #fdef96;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+#logo {
+    float: left;
+}
+
+#searchbar {
+    border-radius: 20px;
+    border: 2px solid lightslategray;
+    height: 40px;
+    float: right;
+}
+
+#carrosel {
+    background: red;
+    height: 400px;
+}
+
+#detalhes_1 {
+    padding: 10px;
+}
+
+
+#lançamentos {
+    text-shadow: 1px 1px 5px black;
+    font-size: 30px;
+    color: purple;
+    font-weight: bold;
+}
+
+#setor_lançamento {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#search_icon {
+    padding-left: 5px;
+    padding-bottom: 0;
+}
+
+#search_icon:hover {
+    background-color: #fdef96;
+}
+
+#rodape p {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+article {
+    float: left;
+    margin: 0 10px 0 10px;
+}
+
+
