@@ -12,7 +12,11 @@
 }
 
 .navbar-icons {
-    margin-top: 5px;
+    margin-top: 4px;
+}
+
+.navbar-icons-user {
+    margin-top: 10px;
 }
 
 .centralize {
@@ -66,8 +70,16 @@
     margin-right: 1em;
 }
 
+#shoppingkart-user {
+    margin-left: 14em;
+}
+
 #searchbar-custom {
-    margin-left: 8em;
+    margin-left: 15em;
+}
+
+#searchbar-custom-user {
+    margin-left: 0;
 }
 
 #product_display h3 {
@@ -92,6 +104,10 @@
 #rodape p {
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#btnLogin a {
+    color: inherit;
 }
 
 body {
@@ -143,4 +159,9 @@ input[type=text]:focus, input[type=password]:focus {
 .signin {
   background-color: #f1f1f1;
   text-align: center;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
 }
