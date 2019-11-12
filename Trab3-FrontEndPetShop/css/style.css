@@ -15,18 +15,65 @@
     margin-top: 5px;
 }
 
+.centralize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+ }
+  
+.price {
+    color: grey;
+    font-size: 22px;
+}
+  
+.card button {
+    border: black 1px solid;
+    border-radius: 2px;
+    outline: 0;
+    padding: 12px;
+    color: black;
+    background-color: #F7B71D;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+.card button:hover {
+    opacity: 0.7;
+}
+
 #logo {
     width: 32px;
     height: 32px;
 }
 
 #shoppingkart {
-    margin-left: 17.5em;
+    margin-left: 16.5em;
     margin-right: 1em;
 }
 
 #searchbar-custom {
     margin-left: 8em;
+}
+
+#product_display h3 {
+    color: #F7B71D;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    text-decoration: underline;
+}
+
+#product_display_list {
+    padding: 1em;
 }
 
 body {
