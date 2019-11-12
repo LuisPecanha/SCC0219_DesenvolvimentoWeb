@@ -133,6 +133,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#logo {
+    width: 32px;
+    height: 32px;
+}
+
 body {
     margin: 0;
 }
