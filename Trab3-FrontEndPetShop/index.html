@@ -11,101 +11,48 @@
 
     <nav class="navbar navbar-expand-sm  bg-navbar-yellow">
         <!-- Brand -->
-        <a class="navbar-brand" href="index.html" style="color: Black;"><img id="logo" src="img/PawLogo.png">Petshop</a>
+        <a class="navbar-brand color-link" href="index.html"><img id="logo" class=".grayscale" src="img/PawLogo.png">Petshop</a>
       
         <!-- Links -->
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link 2</a>
-          </li>
-      
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Departamentos
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Link 1</a>
-              <a class="dropdown-item" href="#">Link 2</a>
-              <a class="dropdown-item" href="#">Link 3</a>
-            </div>
-          </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle color-link" href="#" id="navbardrop" data-toggle="dropdown">
+                    Departamentos
+                </a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Cachorro</a>
+                <a class="dropdown-item" href="#Gato">Gato</a>
+                <a class="dropdown-item" href="#Passaros">Pássaros</a>
+                <a class="dropdown-item" href="#Roedores">Roedores</a>
+                <a class="dropdown-item" href="#Aquarismo">Aquarismo</a>
+                <a class="dropdown-item" href="#Dinossauros">Dinossauros</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link color-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link color-link" href="#">Link 2</a>
+            </li>
+
+            <form id="searchbar-custom" class="form-inline">
+                <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
+                <button class="btn btn-dark" type="submit">Pesquisar</button>
+            </form>
+
+            <li id="shoppingkart" class="nav-item navbar-icons">
+                <a href="#Carrinho" class="color-link"><img src="img/shopping-cart.png"></a>
+            </li>
+            
+            <li id="user_login" class="nav-item navbar-icons">
+                <a href="#Login" class="color-link"><img src="img/man-user.png">Entrar</a>
+            </li>
         </ul>
       </nav> 
 
-    <!-- <body>
-        <div>
-            <ul class="navbar_ul"  id="page_header">
-                <li class="navbar_li"><a class="navbar_a categoriesbar_a" href="#">Logo Empresa</a></li>
-                <li class="navbar_li" style="margin-left: 20em"><input id="searchbar" type="text" placeholder="O que você procura?"></li>
-                <li class="navbar_li" style="float:left"><a id="search_icon" class="navbar_a categoriesbar_a" href="#"><img style="height: 17px;" src="img/search.png"></a></li>
-                <li class="navbar_li" style="float:right"><a class="navbar_a categoriesbar_a" href="#">Login</a></li>
-                <li class="navbar_li" style="float:right"><a class="navbar_a categoriesbar_a" href="#">Carrinho</a></li>
+    
 
-            </ul>
-        </div>
-
-        <div id="categories_bar">
-            <ul class="navbar_ul">
-                <li class="navbar_li"><a class="navbar_a" href="#">Cachorros</a></li>
-                <li class="navbar_li"><a class="navbar_a" href="#">Gatos</a></li>
-                <li class="navbar_li"><a class="navbar_a" href="#">Pássaros</a></li>
-                <li class="navbar_li"><a class="navbar_a" href="#">Roedores</a></li>
-                <li class="navbar_li"><a class="navbar_a" href="#">Aquarismo</a></li>
-                <li class="navbar_li"><a class="navbar_a" id="dino" href="#">Dinossauros</a></li>
-            </ul>
-        </div> -->
-
-        <!-- <div id="carrosel" class="centralize">
-            <h3>Futuro carrosel com destaques da loja</h3>
-        </div> -->
-
-        <!-- <div id="detalhes_1">
-            <img src="img/banner-entregas.jpg">
-        </div>
-
-        <hr>
-        <h2 id="lançamentos" class="centralize">Lançamentos</h2>
-
-        <section id="setor_lançamento">
-            <article>
-                <div class="item_lançamento"></div>
-                <div class="item_nome">Produto 1</div>
-                <div class="item_preço">Por: R$10,90</div>
-                <a href="#" style="text-decoration: none;"><div class="item_botao">Ver mais</div></a>
-            </article>
-            <article>
-                <div class="item_lançamento"></div>
-                <div class="item_nome">Produto 2</div>
-                <div class="item_preço">Por: R$10,90</div>
-                <a href="#" style="text-decoration: none;"><div class="item_botao">Ver mais</div></a>
-            </article>
-            <article>
-                <div class="item_lançamento"></div>
-                <div class="item_nome">Produto 3</div>
-                <div class="item_preço">Por: R$10,90</div>
-                <a href="#" style="text-decoration: none;"><div class="item_botao">Ver mais</div></a>
-            </article>
-            <article>
-                <div class="item_lançamento"></div>
-                <div class="item_nome">Produto 4</div>
-                <div class="item_preço">Por: R$10,90</div>
-                <a href="#" style="text-decoration: none;"><div class="item_botao">Ver mais</div></a>
-            </article>
-            <article>
-                <div class="item_lançamento"></div>
-                <div class="item_nome">Produto 5</div>
-                <div class="item_preço">Por: R$10,90</div>
-                <a href="#" style="text-decoration: none;"><div class="item_botao">Ver mais</div></a>
-            </article>
-        </section>
-
-        <hr>
-
-        <div id="rodape">
+        <!-- <div id="rodape">
             <div class="setor_rodape">
                 <h4>Informações e Ajuda</h4>
                 <p>Sobre nós</p>

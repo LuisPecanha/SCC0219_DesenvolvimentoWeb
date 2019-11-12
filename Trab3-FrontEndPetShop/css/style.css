@@ -1,12 +1,32 @@
 .bg-navbar-yellow {
     background-color: #F7B71D;
+    font-weight: bold;
+}
+
+.color-link {
     color: black;
 }
 
+.color-link:hover {
+    color: gray;
+}
+
+.navbar-icons {
+    margin-top: 5px;
+}
 
 #logo {
     width: 32px;
     height: 32px;
+}
+
+#shoppingkart {
+    margin-left: 17.5em;
+    margin-right: 1em;
+}
+
+#searchbar-custom {
+    margin-left: 8em;
 }
 
 body {
