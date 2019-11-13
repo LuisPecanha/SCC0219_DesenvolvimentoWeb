@@ -171,3 +171,35 @@ input[type=text]:focus, input[type=password]:focus {
     border-radius: 2px;
     margin-left: 0.5em;
 }
+
+.category-container {
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.category-item {
+    float: left;
+    width: 20%;
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    color: black;
+}
+
+.category-item:hover {
+    background-color: black;
+    color: white;
+}
+
+.produto {
+    transition: all 0.4s ease-in-out;
+}
+
+.hide {
+    transform: scale(0);
+    transition: all 0.4s ease-in-out;
+}

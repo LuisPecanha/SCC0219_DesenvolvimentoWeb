@@ -6,6 +6,7 @@
 
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/filter-product.js"></script>
         <title>Petshop Online</title>
     </head>
     <body>
@@ -55,31 +56,43 @@
             <!-- DISPLAY WITH STORE PRODUCTS-->
             <div id="product_display">
                 <h3 class="centralize">Produtos Catioro</h3>
+
+                <!-- Escolha da categoria para aplicar filtro-->
+
+                <h5 class="centralize">Filtrar por:</h5>
+
+                <div class="category-container">
+                    <p class="category-item" id="tudo">Tudo</p>
+                    <p class="category-item" id="racao">Ração</p>
+                    <p class="category-item" id="vasilhame">Vasilhames</p>
+                    <p class="category-item" id="cama">Camas</p>
+                    <p class="category-item" id="roupa">Vestimentas</p>
+                </div>
                 
                 <div id="product_display_list">
                     <div class="row">
-                        <div class="card">
+                        <div class="card produto cama">
                             <img src="/img/produtos_catioro/cama-zion-sao-pet-preta.jpg" alt="Cama Toca Tunel Zion" style="width:100%">
                             <h2>Cama Tunel Zion</h2>
                             <p class="price">$139.90</p>
                             <p>Texto sobre a Cama.</p>
                             <p><button>Adicionar ao Carrinho</button></p>
                         </div> 
-                        <div class="card">
+                        <div class="card produto cama">
                             <img src="/img/produtos_catioro/casinha-iglu-recriar-_2_1.jpg" alt="Casinha Iglu" style="width:100%">
                             <h2>Casinha Iglu</h2>
                             <p class="price">$53.90</p>
                             <p>Texto sobre a Casinha.</p>
                             <p><button>Adicionar ao Carrinho</button></p>
                         </div> 
-                        <div class="card">
+                        <div class="card produto vasilhame">
                             <img src="/img/produtos_catioro/comedouro-pesado-azul-nf-pet1.jpg" alt="Comedouro Azul" style="width:100%">
                             <h2>Comedouro Azul</h2>
                             <p class="price">$14.90</p>
                             <p>Texto sobre o Comedouro.</p>
                             <p><button>Adicionar ao Carrinho</button></p>
                         </div> 
-                        <div class="card">
+                        <div class="card produto vasilhame">
                             <img src="/img/produtos_catioro/comedouro-pesado-vermelho-nf-pet1.jpg" alt="Cama Azul" style="width:100%">
                             <h2>Comedouro Vermelho</h2>
                             <p class="price">$14.90</p>
@@ -88,28 +101,28 @@
                         </div> 
                     </div>
                     <div class="row">
-                        <div class="card">
+                        <div class="card produto racao">
                             <img src="/img/produtos_catioro/ra_o-three-dogs-cordeiro-para-c_es-adultos-ra_as-pequenas-e-mini.jpg" alt="Pochete X" style="width:100%">
                             <h2>Ração 1</h2>
                             <p class="price">$23.90</p>
                             <p>Texto sobre a Ração.</p>
                             <p><button>Adicionar ao Carrinho</button></p>
                         </div> 
-                        <div class="card">
+                        <div class="card produto racao">
                             <img src="/img/produtos_catioro/ra_o_three_dogs_carne_e_arroz_para_c_es_adultos_ra_as_m_dia_e_grandes_1_.jpg" alt="Suplemento Generico" style="width:100%">
                             <h2>Ração 2</h2>
                             <p class="price">$22.40</p>
                             <p>Texto sobre a Ração.</p>
                             <p><button>Adicionar ao Carrinho</button></p>
                         </div> 
-                        <div class="card">
+                        <div class="card produto racao">
                             <img src="/img/produtos_catioro/ra_o_three_dogs_frango_e_arroz_para_c_es_filhotes_ra_as_pequenas_e_mini_2_.jpg" alt="Aquaro Z" style="width:100%">
                             <h2>Ração 3</h2>
                             <p class="price">$26.90</p>
                             <p>Texto sobre o Ração.</p>
                             <p><button>Adicionar ao Carrinho</button></p>
                         </div> 
-                        <div class="card">
+                        <div class="card produto roupa">
                             <img src="/img/produtos_catioro/roupa-esqueleto.jpg" alt="Cama Azul" style="width:100%">
                             <h2>Roupa Esqueleto</h2>
                             <p class="price">$60.90</p>
@@ -118,28 +131,28 @@
                         </div> 
                     </div>
                     <div class="row">
-                        <div class="card">
+                        <div class="card produto cama">
                             <img src="/img/produtos_catioro/sport-blue-pickorruchos.jpg" alt="Pochete X" style="width:100%">
                             <h2>Cama Azul</h2>
                             <p class="price">$19.90</p>
                             <p>Texto sobre a Cama Azul.</p>
                             <p><button>Adicionar ao Carrinho</button></p>
                         </div> 
-                        <div class="card">
+                        <div class="card produto cama">
                             <img src="/img/produtos_catioro/sport-pink-pickorruchos.jpg" alt="Suplemento Generico" style="width:100%">
                             <h2>Cama Rosa</h2>
                             <p class="price">$19.90</p>
                             <p>Texto sobre a Cama Rosa</p>
                             <p><button>Adicionar ao Carrinho</button></p>
                         </div> 
-                        <div class="card">
+                        <div class="card produto roupa">
                             <img src="/img/produtos_catioro/vestido-bruxinha-laranja.jpg" alt="Aquaro Z" style="width:100%">
                             <h2>Roupa Bruxo</h2>
                             <p class="price">$25.20</p>
                             <p>Texto sobre a Roupa de Bruxo</p>
                             <p><button>Adicionar ao Carrinho</button></p>
                         </div> 
-                        <div class="card">
+                        <div class="card produto roupa">
                             <img src="/img/produtos_catioro/vestido-esqueleto.jpg" alt="Cama Azul" style="width:100%">
                             <h2>Roupa de Esqueleto</h2>
                             <p class="price">$13.60</p>
