@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/filter-product.js"></script>
+        <title>Petshop Online</title>
+    </head>
+    <body>
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-sm  bg-navbar-yellow">
+                <!-- Brand -->
+                <a class="navbar-brand color-link" href="index.html"><img id="logo" class=".grayscale" src="img/PawLogo.png">Petshop</a>
+              
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle color-link" href="#" id="navbardrop" data-toggle="dropdown">
+                            Departamentos
+                        </a>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="cachorro.html">Cachorro</a>
+                        <a class="dropdown-item" href="#Gato">Gato</a>
+                        <a class="dropdown-item" href="#Passaros">Pássaros</a>
+                        <a class="dropdown-item" href="#Roedores">Roedores</a>
+                        <a class="dropdown-item" href="#Aquarismo">Aquarismo</a>
+                        <a class="dropdown-item" href="#Dinossauros">Dinossauros</a>
+                        </div>
+                    </li>
+        
+                    <form id="searchbar-custom" class="form-inline">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
+                        <button class="btn btn-dark" type="submit">Pesquisar</button>
+                    </form>
+        
+                    <li id="shoppingkart" class="nav-item navbar-icons">
+                        <a href="#Carrinho" class="color-link"><img src="img/shopping-cart.png"></a>
+                    </li>
+                    
+                    <li id="user_login" class="nav-item navbar-icons">
+                        <a href="#loginModal" class="color-link" data-toggle="modal"><img src="img/man-user.png">Entrar</a>
+                    </li>
+                </ul>
+            </nav> 
+    
+            <!-- BANNER WITH DOG DETAILS -->
+            <div id="banner">
+                <img src="img/banner-categoria-cachorro.png" alt="">
+            </div>
+    
+            <hr>
+    
+            <!-- DISPLAY WITH STORE PRODUCTS-->
+            <div id="product_display">
+                <h3 class="centralize">Produtos Catioro</h3>
+
+                <!-- Escolha da categoria para aplicar filtro-->
+
+                <h5 class="centralize">Filtrar por:</h5>
+
+                <div class="category-container">
+                    <p class="category-item" id="tudo">Tudo</p>
+                    <p class="category-item" id="racao">Ração</p>
+                    <p class="category-item" id="vasilhame">Vasilhames</p>
+                    <p class="category-item" id="cama">Camas</p>
+                    <p class="category-item" id="roupa">Vestimentas</p>
+                </div>
+                
+                <div id="product_display_list">
+                    <div class="row">
+                        <div class="card produto cama">
+                            <img src="/img/produtos_catioro/cama-zion-sao-pet-preta.jpg" alt="Cama Toca Tunel Zion" style="width:100%">
+                            <h2>Cama Tunel Zion</h2>
+                            <p class="price">$139.90</p>
+                            <p>Texto sobre a Cama.</p>
+                            <p><button>Adicionar ao Carrinho</button></p>
+                        </div> 
+                        <div class="card produto cama">
+                            <img src="/img/produtos_catioro/casinha-iglu-recriar-_2_1.jpg" alt="Casinha Iglu" style="width:100%">
+                            <h2>Casinha Iglu</h2>
+                            <p class="price">$53.90</p>
+                            <p>Texto sobre a Casinha.</p>
+                            <p><button>Adicionar ao Carrinho</button></p>
+                        </div> 
+                        <div class="card produto vasilhame">
+                            <img src="/img/produtos_catioro/comedouro-pesado-azul-nf-pet1.jpg" alt="Comedouro Azul" style="width:100%">
+                            <h2>Comedouro Azul</h2>
+                            <p class="price">$14.90</p>
+                            <p>Texto sobre o Comedouro.</p>
+                            <p><button>Adicionar ao Carrinho</button></p>
+                        </div> 
+                        <div class="card produto vasilhame">
+                            <img src="/img/produtos_catioro/comedouro-pesado-vermelho-nf-pet1.jpg" alt="Cama Azul" style="width:100%">
+                            <h2>Comedouro Vermelho</h2>
+                            <p class="price">$14.90</p>
+                            <p>Texto sobre o Comedouro</p>
+                            <p><button>Adicionar ao Carrinho</button></p>
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="card produto racao">
+                            <img src="/img/produtos_catioro/ra_o-three-dogs-cordeiro-para-c_es-adultos-ra_as-pequenas-e-mini.jpg" alt="Pochete X" style="width:100%">
+                            <h2>Ração 1</h2>
+                            <p class="price">$23.90</p>
+                            <p>Texto sobre a Ração.</p>
+                            <p><button>Adicionar ao Carrinho</button></p>
+                        </div> 
+                        <div class="card produto racao">
+                            <img src="/img/produtos_catioro/ra_o_three_dogs_carne_e_arroz_para_c_es_adultos_ra_as_m_dia_e_grandes_1_.jpg" alt="Suplemento Generico" style="width:100%">
+                            <h2>Ração 2</h2>
+                            <p class="price">$22.40</p>
+                            <p>Texto sobre a Ração.</p>
+                            <p><button>Adicionar ao Carrinho</button></p>
+                        </div> 
+                        <div class="card produto racao">
+                            <img src="/img/produtos_catioro/ra_o_three_dogs_frango_e_arroz_para_c_es_filhotes_ra_as_pequenas_e_mini_2_.jpg" alt="Aquaro Z" style="width:100%">
+                            <h2>Ração 3</h2>
+                            <p class="price">$26.90</p>
+                            <p>Texto sobre o Ração.</p>
+                            <p><button>Adicionar ao Carrinho</button></p>
+                        </div> 
+                        <div class="card produto roupa">
+                            <img src="/img/produtos_catioro/roupa-esqueleto.jpg" alt="Cama Azul" style="width:100%">
+                            <h2>Roupa Esqueleto</h2>
+                            <p class="price">$60.90</p>
+                            <p>Texto sobre a Roupa de Esqueleto.</p>
+                            <p><button>Adicionar ao Carrinho</button></p>
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="card produto cama">
+                            <img src="/img/produtos_catioro/sport-blue-pickorruchos.jpg" alt="Pochete X" style="width:100%">
+                            <h2>Cama Azul</h2>
+                            <p class="price">$19.90</p>
+                            <p>Texto sobre a Cama Azul.</p>
+                            <p><button>Adicionar ao Carrinho</button></p>
+                        </div> 
+                        <div class="card produto cama">
+                            <img src="/img/produtos_catioro/sport-pink-pickorruchos.jpg" alt="Suplemento Generico" style="width:100%">
+                            <h2>Cama Rosa</h2>
+                            <p class="price">$19.90</p>
+                            <p>Texto sobre a Cama Rosa</p>
+                            <p><button>Adicionar ao Carrinho</button></p>
+                        </div> 
+                        <div class="card produto roupa">
+                            <img src="/img/produtos_catioro/vestido-bruxinha-laranja.jpg" alt="Aquaro Z" style="width:100%">
+                            <h2>Roupa Bruxo</h2>
+                            <p class="price">$25.20</p>
+                            <p>Texto sobre a Roupa de Bruxo</p>
+                            <p><button>Adicionar ao Carrinho</button></p>
+                        </div> 
+                        <div class="card produto roupa">
+                            <img src="/img/produtos_catioro/vestido-esqueleto.jpg" alt="Cama Azul" style="width:100%">
+                            <h2>Roupa de Esqueleto</h2>
+                            <p class="price">$13.60</p>
+                            <p>Texto sobre a Roupa de Esqueleto.</p>
+                            <p><button>Adicionar ao Carrinho</button></p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+    
+            <!-- MODAL INFORMATION-->
+            <div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Login</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST">
+                                <div class="form-group">
+                                    <a href="" class="float-right">Novo usuário?</a>
+                                    <label for="uname1">Usuário:</label>
+                                    <input type="text" class="form-control form-control-lg" name="uname1" id="uname1" required="">
+                                    <div class="invalid-feedback">Inserir usuário, por favor.</div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Senha:</label>
+                                    <input type="password" class="form-control form-control-lg" id="pwd1" required="" autocomplete="new-password">
+                                    <div class="invalid-feedback">Não esqueça de colocar sua senha também.</div>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="rememberMe">
+                                    <label class="custom-control-label" for="rememberMe">Lembrar de mim neste dispositivo.</label>
+                                </div>
+                                <div class="form-group py-4">
+                                    <button class="btn btn-outline-secondary btn-lg" data-dismiss="modal" aria-hidden="true">Cancelar</button>
+                                    <button type="submit" class="btn btn-success btn-lg float-right" id="btnLogin">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- FOOTER AREA -->
+            <div id="rodape">
+                <div class="setor_rodape">
+                    <h4>Informações e Ajuda</h4>
+                    <p>Sobre nós</p>
+                    <p>Política e Privacidade</p>
+                    <p>Forma de Pagamento</p>
+                    <p>Fala Conosco</p>
+                </div>
+        
+                <div class="setor_rodape">
+                    <h4>Atendimento</h4>
+                    <p>Segunda a Sexta das 09hs às 18hs</p>
+                    <p>onlinepet@x.com</p>
+                    <p>(XX) XXXXX-XXXX</p>
+                </div>
+            </div>
+        </body>
+</html>

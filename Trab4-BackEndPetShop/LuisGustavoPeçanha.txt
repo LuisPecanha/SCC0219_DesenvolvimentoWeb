@@ -1,0 +1,15 @@
+Luis Gustavo Peçanha 9806763
+
+Dentro desta pasta estao os arquivos html de algumas paginas do petshop. Tem o index
+com a pagina principal, cachorro.html que é uma sub seção da página dedicado para produtos de cachorros,
+cadastro.html que é a página onde o usuario é direcionado para se cadastrar no petshop e tela_inicial_usuario.html que
+é a pagina com os serviços que clientes cadastrados possuem.
+
+    Também há a pasta js com os arquivos javascript dos frameworks: Bootstrap e Jquery. Aqui
+há também os arquivos filter-product.js e myScripts.js. O primeiro tem a funçaõ javascript para filtrar
+produtos em cachorro.html e o segundo possui funçoes javascript de utilização geral no site.
+
+    Na pasta img há as diversas imagens usadas em todo o site.
+
+    Na pasta css há o arquivo css do framework Bootstrap e o style.css que são customizações próprias
+de css para elementos html no site. 

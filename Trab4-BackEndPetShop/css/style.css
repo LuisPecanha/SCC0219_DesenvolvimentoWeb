@@ -1,0 +1,205 @@
+.bg-navbar-yellow {
+    background-color: #F7B71D;
+    font-weight: bold;
+}
+
+.color-link {
+    color: black;
+}
+
+.color-link:hover {
+    color: gray;
+}
+
+.navbar-icons {
+    margin-top: 4px;
+}
+
+.navbar-icons-user {
+    margin-top: 10px;
+}
+
+.centralize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+ }
+  
+.price {
+    color: grey;
+    font-size: 22px;
+}
+  
+.card button {
+    border: black 1px solid;
+    border-radius: 2px;
+    outline: 0;
+    padding: 12px;
+    color: black;
+    background-color: #F7B71D;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+.card button:hover {
+    opacity: 0.7;
+}
+
+.setor_rodape {
+    float: left;
+    margin: 0 20px 0 20px;
+}
+
+#logo {
+    width: 32px;
+    height: 32px;
+}
+
+#shoppingkart {
+    margin-left: 16.5em;
+    margin-right: 1em;
+}
+
+#shoppingkart-user {
+    margin-left: 14em;
+}
+
+#searchbar-custom {
+    margin-left: 15em;
+}
+
+#searchbar-custom-user {
+    margin-left: 0;
+}
+
+#product_display h3 {
+    color: #F7B71D;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    text-decoration: underline;
+}
+
+#product_display_list {
+    padding: 1em;
+}
+
+#rodape {
+    background-color: rgb(194, 186, 186);
+    display: inline-block;
+    width: 100%;
+    color: black;
+    padding: 1em;
+}
+
+#rodape p {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#btnLogin a {
+    color: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+.password-input {
+    margin-bottom: 1em;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  display: inline-block;
+  border: 1px solid black;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+#date {
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-left: 0.5em;
+}
+
+.category-container {
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.category-item {
+    float: left;
+    width: 20%;
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    color: black;
+}
+
+.category-item:hover {
+    background-color: black;
+    color: white;
+}
+
+.produto {
+    transition: all 0.4s ease-in-out;
+}
+
+.hide {
+    transform: scale(0);
+    transition: all 0.4s ease-in-out;
+}

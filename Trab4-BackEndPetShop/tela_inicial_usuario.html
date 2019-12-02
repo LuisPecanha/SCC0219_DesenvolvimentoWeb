@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/myScripts.js"></script>
+        <title>Petshop Online</title>
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-sm  bg-navbar-yellow">
+            <!-- Brand -->
+            <a class="navbar-brand color-link" href="index.html"><img id="logo" class=".grayscale" src="img/PawLogo.png">Petshop</a>
+          
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown navbar-icons">
+                    <a class="nav-link dropdown-toggle color-link" href="#" id="navbardrop" data-toggle="dropdown">
+                        Departamentos
+                    </a>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" href="cachorro.html">Cachorro</a>
+                    <a class="dropdown-item" href="#Gato">Gato</a>
+                    <a class="dropdown-item" href="#Passaros">Pássaros</a>
+                    <a class="dropdown-item" href="#Roedores">Roedores</a>
+                    <a class="dropdown-item" href="#Aquarismo">Aquarismo</a>
+                    <a class="dropdown-item" href="#Dinossauros">Dinossauros</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item navbar-icons">
+                    <a class="nav-link color-link" href="#servicoModal" data-toggle="modal">Agendar Serviço</a>
+                </li>
+    
+                <form id="searchbar-custom-user" class="form-inline">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
+                    <button class="btn btn-dark" type="submit">Pesquisar</button>
+                </form>
+    
+                <li id="shoppingkart-user" class="nav-item navbar-icons">
+                    <a href="#Carrinho" class="color-link"><img src="img/shopping-cart.png"></a>
+                </li>
+                
+                
+                <li class="nav-item dropdown" style="margin-left: 1em; margin-right: 5px;">
+                    <a class="nav-link dropdown-toggle color-link" href="#" id="navbardrop" data-toggle="dropdown">
+                        <img src="img/man-user.png">
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#Dados">Meus Dados</a>
+                        <a class="dropdown-item" href="#Configurações">Configurações</a>
+                        <a class="dropdown-item" href="#Pedidos">Meus Pedidos</a>
+                        <a class="dropdown-item" href="#ServiçosAgendados">Serviços Agendados</a>
+                    </div>
+                </li>
+            
+                <li class="nav-item navbar-icons-user">
+                    <a href="#" class="color-link disabled">Bem vindo, Usuario</a>
+                </li>
+            </ul>
+        </nav> 
+
+        <!-- CAROSSEL COM GRANDES OFERTAS -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img class="d-block w-100" src="img/carossel/imagem1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                <img class="d-block w-100" src="img/carossel/imagem2.gif" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                <img class="d-block w-100" src="img/carossel/imagem3.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- BANNER WITH SERVICE DETAILS -->
+        <div id="banner">
+            <img src="img/banner-entregas.jpg" alt="">
+        </div>
+
+        <hr>
+
+        <!-- DISPLAY WITH STORE PRODUCTS-->
+        <div id="product_display">
+            <h3 class="centralize">Produtos em Destaque</h3>
+            
+            <div id="product_display_list">
+                <div class="row">
+                    <div class="card">
+                        <img src="/img/produtos/pochete.jpg" alt="Pochete X" style="width:100%">
+                        <h2>Pochete X</h2>
+                        <p class="price">$19.99</p>
+                        <p>Texto sobre a Pochete.</p>
+                        <p><button>Adicionar ao Carrinho</button></p>
+                    </div> 
+                    <div class="card">
+                        <img src="/img/produtos/suplemento.jpg" alt="Suplemento Generico" style="width:100%">
+                        <h2>Suplemento Y</h2>
+                        <p class="price">$6.49</p>
+                        <p>Texto sobre o Suplemento.</p>
+                        <p><button>Adicionar ao Carrinho</button></p>
+                    </div> 
+                    <div class="card">
+                        <img src="/img/produtos/aquario.jpg" alt="Aquaro Z" style="width:100%">
+                        <h2>Aquario Z</h2>
+                        <p class="price">$27.89</p>
+                        <p>Texto sobre o Aquario.</p>
+                        <p><button>Adicionar ao Carrinho</button></p>
+                    </div> 
+                    <div class="card">
+                        <img src="/img/produtos/cama_azul.jpg" alt="Cama Azul" style="width:100%">
+                        <h2>Cama Azul</h2>
+                        <p class="price">$14.99</p>
+                        <p>Texto sobre a Cama Azul.</p>
+                        <p><button>Adicionar ao Carrinho</button></p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL INFORMATION-->
+        <div id="servicoModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Agendar Serviço</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST">
+                            <div class="form-group">
+                                <label for="pet_name1">Nome do Pet:</label>
+                                <input type="text" class="form-control form-control-lg" name="pet_name1" id="pet_name1" required="">
+                                <div class="invalid-feedback">Inserir nome do pet, por favor.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="especie_pet">Escolher a especie do seu pet:</label>
+                                <select class="float-right" name="especie_pet" id="especie_pet">
+                                    <option value="Cachorro">Cachorro</option>
+                                    <option value="Gato">Gato</option>
+                                    <option value="Pássaro">Pássaro</option>
+                                    <option value="Roedor">Roedor</option>
+                                    <option value="Peixe">Peixe</option>
+                                    <option value="Dinossauro">Dinossauro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="tipo_servico">Escolher o serviço a ser realizado:</label>
+                                <select class="float-right" name="tipo_servico" id="tipo_servico">
+                                    <option value="Consulta Médica">Consulta Médica</option>
+                                    <option value="Tosa">Tosa</option>
+                                    <option value="Banho">Banho</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="data_servico">Escolher data:</label>
+                                <input id="date" type="date" name="data_servico" id="data_servico" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="hora_servico">Escolher horario:</label>
+                                <input type="time" id="horario" name="hora_servico" min="08:00" max="18:00" required="">
+                            </div>
+                            
+                            <div class="form-group py-4">
+                                <button class="btn btn-outline-secondary btn-lg" data-dismiss="modal" aria-hidden="true">Cancelar</button>
+                                <button type="submit" class="btn btn-success btn-lg float-right" id="btnLogin" onclick="servicoSucesso()">Agendar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER AREA -->
+        <div id="rodape">
+            <div class="setor_rodape">
+                <h4>Informações e Ajuda</h4>
+                <p>Sobre nós</p>
+                <p>Política e Privacidade</p>
+                <p>Forma de Pagamento</p>
+                <p>Fala Conosco</p>
+            </div>
+    
+            <div class="setor_rodape">
+                <h4>Atendimento</h4>
+                <p>Segunda a Sexta das 09hs às 18hs</p>
+                <p>onlinepet@x.com</p>
+                <p>(XX) XXXXX-XXXX</p>
+            </div>
+        </div>
+    </body>
+
+</html>
