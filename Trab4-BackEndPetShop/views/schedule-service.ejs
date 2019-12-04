@@ -1,0 +1,95 @@
+<nav class="navbar navbar-expand-sm  bg-navbar-yellow">
+        <!-- Brand -->
+        <a class="navbar-brand color-link" href="/dashboard"><img id="logo" class=".grayscale" src="/img/PawLogo.png">Petshop</a>
+      
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle color-link" href="#" id="navbardrop" data-toggle="dropdown">
+                    Departamentos
+                </a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="/cachorro">Cachorro</a>
+                <a class="dropdown-item" href="#Gato">Gato</a>
+                <a class="dropdown-item" href="#Passaros">Pássaros</a>
+                <a class="dropdown-item" href="#Roedores">Roedores</a>
+                <a class="dropdown-item" href="#Aquarismo">Aquarismo</a>
+                <a class="dropdown-item" href="#Dinossauros">Dinossauros</a>
+                </div>
+            </li>
+
+            <form style="margin-left: 7em;" id="searchbar-custom" class="form-inline">
+                <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
+                <button class="btn btn-dark" type="submit">Pesquisar</button>
+            </form>
+
+            <li id="shoppingkart" class="nav-item navbar-icons">
+                <a href="#Carrinho" class="color-link"><img src="/img/shopping-cart.png"></a>
+            </li>
+            
+            <li id="user_login" class="nav-item navbar-icons">
+                <a href="#" class="color-link disabled">Bem vindo, <%= name %></a>
+            </li>
+        </ul>
+    </nav>
+
+<div class="row mt-5">
+        <div class="col-md-6 m-auto">
+          <div class="card card-body">
+            <h1 class="text-center mb-3">
+              <i class="fas fa-user-plus"></i> Register
+            </h1>
+            <%- include('partials/messages'); %>
+            <form action="/users/register" method="POST">
+              <div class="form-group">
+                <label for="name">Nome do Pet</label>
+                <input
+                  type="pet-name"
+                  id="pet-name"
+                  name="pet-name"
+                  class="form-control"
+                  placeholder="Enter Name"
+                  value="<%= typeof pet-name != 'undefined' ? pet-name : '' %>"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Enter Email"
+                  value="<%= typeof email != 'undefined' ? email : '' %>"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="form-control"
+                  placeholder="Create Password"
+                  value="<%= typeof password != 'undefined' ? password : '' %>"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password2">Confirm Password</label>
+                <input
+                  type="password"
+                  id="password2"
+                  name="password2"
+                  class="form-control"
+                  placeholder="Confirm Password"
+                  value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Register
+              </button>
+            </form>
+            <p class="lead mt-4">Have An Account? <a href="/users/login">Login</a></p>
+          </div>
+        </div>
+      </div>

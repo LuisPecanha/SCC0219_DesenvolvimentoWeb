@@ -1,7 +1,7 @@
 <!-- NAVBAR -->
         <nav class="navbar navbar-expand-sm  bg-navbar-yellow">
             <!-- Brand -->
-            <a class="navbar-brand color-link" href="/welcome"><img id="logo" class=".grayscale" src="/img/PawLogo.png">Petshop</a>
+            <a class="navbar-brand color-link" href="/dashboard"><img id="logo" class=".grayscale" src="/img/PawLogo.png">Petshop</a>
           
             <!-- Links -->
             <ul class="navbar-nav">
@@ -20,7 +20,7 @@
                 </li>
                 
                 <li class="nav-item navbar-icons">
-                    <a class="nav-link color-link" href="#servicoModal" data-toggle="modal">Agendar Serviço</a>
+                    <a class="nav-link color-link" href="/services/schedule-service">Agendar Serviço</a>
                 </li>
     
                 <form id="searchbar-custom-user" class="form-inline">
@@ -134,7 +134,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     </div>
                     <div class="modal-body">
-                        <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST">
+                        <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" action="servicos/agender-servico" method="POST">
                             <div class="form-group">
                                 <label for="pet_name1">Nome do Pet:</label>
                                 <input type="text" class="form-control form-control-lg" name="pet_name1" id="pet_name1" required="">
@@ -161,11 +161,11 @@
                             </div>
                             <div class="form-group">
                                 <label for="data_servico">Escolher data:</label>
-                                <input id="date" type="date" name="data_servico" id="data_servico" required="">
+                                <input id="date" type="date" name="data_servico" id="data_servico" required="" value="<%= typeof date != 'undefined' ? date : '' %>">
                             </div>
                             <div class="form-group">
                                 <label for="hora_servico">Escolher horario:</label>
-                                <input type="time" id="horario" name="hora_servico" min="08:00" max="18:00" required="">
+                                <input type="time" id="horario" name="hora_servico" min="08:00" max="18:00" required="" value="<%= typeof time != 'undefined' ? time : '' %>">
                             </div>
                             
                             <div class="form-group py-4">
