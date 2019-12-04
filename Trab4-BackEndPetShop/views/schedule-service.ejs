@@ -37,59 +37,69 @@
         <div class="col-md-6 m-auto">
           <div class="card card-body">
             <h1 class="text-center mb-3">
-              <i class="fas fa-user-plus"></i> Register
+              <i class="fas fa-user-plus"></i> Agendar Serviço
             </h1>
             <%- include('partials/messages'); %>
-            <form action="/users/register" method="POST">
+            <form action="/services/schedule-service" method="POST">
               <div class="form-group">
-                <label for="name">Nome do Pet</label>
+                <label for="petname">Nome do Pet</label>
                 <input
-                  type="pet-name"
-                  id="pet-name"
-                  name="pet-name"
+                  type="petname"
+                  id="petname"
+                  name="petname"
                   class="form-control"
                   placeholder="Enter Name"
-                  value="<%= typeof pet-name != 'undefined' ? pet-name : '' %>"
+                  value="<%= typeof petname != 'undefined' ? petname : '' %>"
                 />
               </div>
               <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
+                <label for="email">Espécie do Pet</label>
+                <select class="form-control" name="species" id="species" type="species">
+                    <option value="Cachorro">Cachorro</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Pássaro">Pássaro</option>
+                    <option value="Roedor">Roedor</option>
+                    <option value="Peixe">Peixe</option>
+                    <option value="Dinossauro">Dinossauro</option>
+                </select>
+                <!-- <input
+                  type="species"
+                  id="species"
+                  name="species"
                   class="form-control"
-                  placeholder="Enter Email"
+                  placeholder="Escolher espécie"
                   value="<%= typeof email != 'undefined' ? email : '' %>"
-                />
+                /> -->
               </div>
               <div class="form-group">
-                <label for="password">Password</label>
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  class="form-control"
-                  placeholder="Create Password"
-                  value="<%= typeof password != 'undefined' ? password : '' %>"
-                />
+                  <label for="servicetype">Serviço a ser realizado:</label>
+                  <select class="form-control" name="servicetype" id="servicetype" type="servicetype">
+                      <option value="Consulta Médica">Consulta Médica</option>
+                      <option value="Tosa">Tosa</option>
+                      <option value="Banho">Banho</option>
+                  </select>
               </div>
               <div class="form-group">
-                <label for="password2">Confirm Password</label>
-                <input
-                  type="password"
-                  id="password2"
-                  name="password2"
-                  class="form-control"
-                  placeholder="Confirm Password"
-                  value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
-                />
+                  <label for="servicedate">Escolher data:</label>
+                  <input class="form-control" id="date" type="date" name="servicedate" id="servicedate" required="" value="<%= typeof servicedate != 'undefined' ? servicedate : '' %>">
+              </div>
+              <div class="form-group">
+                  <label for="servicetime">Escolher horario:</label>
+                  <select class="form-control" name="servicetime" id="servicetime" type="servicetime">
+                      <option value="09:00-10:00">09:00-10:00</option>
+                      <option value="10:00-11:00">10:00-11:00</option>
+                      <option value="11:00-12:00">11:00-12:00</option>
+                      <option value="12:00-13:00">12:00-13:00</option>
+                      <option value="13:00-14:00">13:00-14:00</option>
+                      <option value="14:00-15:00">14:00-15:00</option>
+                      <option value="15:00-16:00">15:00-16:00</option>
+                      <option value="16:00-17:00">16:00-17:00</option>
+                  </select>
               </div>
               <button type="submit" class="btn btn-primary btn-block">
-                Register
+                Agendar
               </button>
             </form>
-            <p class="lead mt-4">Have An Account? <a href="/users/login">Login</a></p>
           </div>
         </div>
       </div>
