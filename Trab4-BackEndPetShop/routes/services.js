@@ -8,4 +8,6 @@ router.get('/schedule-service', (req, res) =>
         name: req.user.name
     }));
 
+// Schedule Service Handler
+
 module.exports = router;
