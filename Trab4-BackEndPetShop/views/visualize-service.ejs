@@ -33,15 +33,22 @@
     </ul>
 </nav>
 
-<% data.forEach(function(service){  %>
-    <ul>
-      <li><%= service.petname %></li>
-      <li><%= service.species %></li>
-      <li><%= service.servicetype %></li>
-      <li><%= service.servicedate %></li>
-      <li><%= service.servicetime %></li>
-      <li><%= service.date %></li>
-      <li><%= service.user_id %></li>
-      <li>EDITAR / REMOVER</li>
-    </ul>
-<%})%>
+<div id="services-panel">
+    <h1 class="centralize">Serviços Agendados:</h1>
+    <hr>
+    <% data.forEach(function(service){  %>
+        <ul class="list-group" style="width: 20%;">
+          <li class="list-group-item centralize">Nome do pet: <%= service.petname %></li>
+          <li class="list-group-item centralize">Espécie: <%= service.species %></li>
+          <li class="list-group-item centralize">Tipo de serviço: <%= service.servicetype %></li>
+          <li class="list-group-item centralize">Data: <%= service.servicedate %></li>
+          <li class="list-group-item centralize">Horário: <%= service.servicetime %></li>
+          <li class="list-group-item centralize"><%= service.user_id %></li>
+          <li class="list-group-item centralize">
+            <button type="button" class="btn btn-danger">
+                CANCELAR
+            </button>
+          </li>
+        </ul>
+    <%})%>
+</div>
