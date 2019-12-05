@@ -13,10 +13,16 @@ router.get('/schedule-service', (req, res) =>
     }));
 
 router.get('/visualize-service', (req, res) =>
-    res.render('visualize-service', {
-        name: req.user.name
+    Service.find({}, (err, services) => {
+        if(err) {
+            console.log(err);
+        } else {
+            res.render('visualize-service', { 
+                name: req.user.name,
+                data: services
+            });
+        }
     }));
-
 // Schedule Handler
 router.post('/schedule-service', (req, res) => {
 

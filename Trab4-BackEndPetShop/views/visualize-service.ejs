@@ -32,3 +32,16 @@
         </li>
     </ul>
 </nav>
+
+<% data.forEach(function(service){  %>
+    <ul>
+      <li><%= service.petname %></li>
+      <li><%= service.species %></li>
+      <li><%= service.servicetype %></li>
+      <li><%= service.servicedate %></li>
+      <li><%= service.servicetime %></li>
+      <li><%= service.date %></li>
+      <li><%= service.user_id %></li>
+      <li>EDITAR / REMOVER</li>
+    </ul>
+<%})%>
