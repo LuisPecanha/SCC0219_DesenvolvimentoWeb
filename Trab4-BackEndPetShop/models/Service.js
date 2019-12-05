@@ -24,9 +24,12 @@ const ServiceSchema = new mongoose.Schema({
     date: {
         type: Date,
         default: Date.now
+    },
+    user_id: {
+        type: String
     }
 });
 
-const Service = mongoose.model('Service', UserSchema);
+const Service = mongoose.model('Service', ServiceSchema);
 
 module.exports = Service;
