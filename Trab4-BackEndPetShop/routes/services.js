@@ -14,7 +14,7 @@ router.get('/schedule-service', (req, res) =>
 
 router.post('/schedule-service', (req, res) => {
 
-    var owner_name = req.user.name;
+    var user_id = req.user.name;
     const {petname, species, servicetype, servicedate, servicetime} = req.body;
 
     let errors = [];
@@ -31,22 +31,20 @@ router.post('/schedule-service', (req, res) => {
             servicetype,
             servicedate,
             servicetime,
-            owner_name
+            user_id
         });
     }
     else {
         //Validation passed
         const newService = new Service({
-            owner_name,
             petname,
             species,
             servicetype,
             servicedate,
             servicetime,
+            user_id
         });
 
-        console.log(owner_name)
-        console.log(newService)
         newService.save()
             .then(service => {
                 req.flash('success_msg', 'Serviço foi agendado.');
