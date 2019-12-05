@@ -12,6 +12,12 @@ router.get('/schedule-service', (req, res) =>
         name: req.user.name
     }));
 
+router.get('/visualize-service', (req, res) =>
+    res.render('visualize-service', {
+        name: req.user.name
+    }));
+
+// Schedule Handler
 router.post('/schedule-service', (req, res) => {
 
     var user_id = req.user.name;
